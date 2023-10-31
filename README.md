@@ -6,6 +6,14 @@
 
 ---
 
+# 31/10/23:
+
+- Create the logic for the program.
+- Create the logic for opening, writing and checking the file
+- Create the logic for the loop of the guests
+
+---
+
 After launching project.py the program will greet you with some greetings.
 After that, will ask you for the customer surname and name(in lastname, firstname format).
 After that, will ask for the checkin date (input as YYYY-MM-DD) and the check out date (again in YYYY-MM-DD).
