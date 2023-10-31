@@ -13,7 +13,7 @@ After that, a text will appear:
 "Welcome {lastname} {firstname}, your check in is {check-in-date} and the check out is {check-out-date} for a total of {out-in} days."
 Everything will be saved in a .csv file.
 Then a new prompt for a new guest will appear.
-If there is no more guests, with an escape sequence the software will terminate (CMD+D) (??)
+If there is no more guests, with an escape sequence the software will terminate (control+d)
 
 - What will your software do? What features will it have? How will it be executed?
   The software will create a CSV file with the name, surname, check-in and check-out details from customers. You will be able to add the customer and it will be executed directly from console
