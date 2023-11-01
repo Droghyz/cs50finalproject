@@ -1,38 +1,13 @@
-# YOUR PROJECT TITLE
+# PyHotel
 
     #### Video Demo:  <URL HERE>
     #### Description:
-    TODO
-
----
-
-# 01/11/23:
-
-- Added few function for better testing
-- Created the unit testing for project.py
-
----
-
-# 31/10/23:
-
-- Create the logic for the program.
-- Create the logic for opening, writing and checking the file
-- Create the logic for the loop of the guests
-
----
-
-After launching project.py the program will greet you with some greetings.
-After that, will ask you for the customer surname and name(in lastname, firstname format).
-After that, will ask for the checkin date (input as YYYY-MM-DD) and the check out date (again in YYYY-MM-DD).
-After that, a text will appear:
-"Welcome {lastname} {firstname}, your check in is {check-in-date} and the check out is {check-out-date} for a total of {out-in} days."
-Everything will be saved in a .csv file.
-Then a new prompt for a new guest will appear.
-If there is no more guests, with an escape sequence the software will terminate (control+d)
-
-- What will your software do? What features will it have? How will it be executed?
-  The software will create a CSV file with the name, surname, check-in and check-out details from customers. You will be able to add the customer and it will be executed directly from console
-
-What new skills will you need to acquire? What topics will you need to research?
-When a customer come to the Hotel, you need to register last name and first name of him, as the check-in date and check-out date. I will need to create and update a CSV file with all the information.
-It could be that multiple guest will check in at the same time, so the software needs to prompt always for details, and then i can use an excape sequences to exit the software and save everything.
+    PyHotel is a program that simulate few of the steps that Receptionist need to do when a customer arrives to the Hotel, asking the user for inputs and generating a CSV file with the collection of these inputs.
+    At the beginning, the usert is greeted with a greeting string before asking for the name and surname of the guest (comma separated i.e: John,Doe).
+    If the name does not respect this format, the program will ask again for the input.
+    After the name and surname is provided, the program will ask for the check in day (arrival day at the hotel) in YYYY-MM-DD format (i.e: 2023-10-30), as well as the check out day (day of departure).
+    If one or both of the dates input is in a wrong format (not separated from a "-"), the program will ask again for the input otherwise, if the dates are totally wrong (i.e: 2023-40-50) the program will raise a ValueError and close the program.
+    One more check is made, the program will check if the check out date is after the check in date, if is not, the program will raise a ValueError and exit the program.
+    Once the last check is done, the program will return a string to the user with the Surname and Name of the guest following the ammount of days that will stay in the hotel (The days are displayed as "night slept to the hotel", the day of departure in fact is not calculated).
+    At this time the CSV file is generated and the following information are saved (Last Name, Name, Check In, Check Out, Days at Hotel)
+    At the end, the program will ask the user if he want to insert another guest (in case of multiple check in at the same time) or just exit the program.

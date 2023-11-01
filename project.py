@@ -3,7 +3,7 @@ import csv
 
 def main():
     start = True
-    print("Greetings! Welcome to xyz, here is the new check in")
+    print("Greetings User! Welcome to PyHotel")
     while start:
       name = input("Insert guest Name,Surname: ").strip()
       first, last = check_name(name)
@@ -45,7 +45,7 @@ def check_in(first, last):
         total_stay = new_check_out-new_check_in
         days_stayed = total_stay.days
         negative_days(days_stayed)
-        return (f"{last} {first} will stay here for {days_stayed} days"), days_stayed, new_check_in, new_check_out
+        return (f"{last} {first} will stay at the Hotel for {days_stayed} days"), days_stayed, new_check_in, new_check_out
     
 
 def is_date_valid(c_in_format, c_out_format):
