@@ -1,6 +1,6 @@
 # PyHotel
 
-## Video Demo: <https://www.youtube.com/watch?v=ysABsyQQDGs>
+## Video Demo: [Here](https://www.youtube.com/watch?v=ysABsyQQDGs)
 
 ### Description:
 
