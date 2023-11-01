@@ -6,6 +6,13 @@
 
 ---
 
+# 01/11/23:
+
+- Added few function for better testing
+- Created the unit testing for project.py
+
+---
+
 # 31/10/23:
 
 - Create the logic for the program.
